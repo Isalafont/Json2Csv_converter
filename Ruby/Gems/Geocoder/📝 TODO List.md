@@ -1,4 +1,5 @@
-## Directory where geocoder is places
+## Directory where geocoder is places 
+#Ruby #geoloc #TODO
 
 - [X] config/initializers/geocoder.rb
 - [X] app/workers/geocoder_worker.rb

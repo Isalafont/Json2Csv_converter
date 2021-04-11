@@ -27,3 +27,13 @@
 .tag[href^="#inprogress"] {
   background-color: orange;
 }
+.tag[href^="#Ruby"] {
+  background-color: #f03738;
+}
+.tag[href^="#geoloc"] {
+  background-color: #73BFB8;
+}
+.tag[href^="#TODO"] {
+  background-color: #fec601;
+}
+
