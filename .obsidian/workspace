@@ -4,12 +4,27 @@
     "type": "split",
     "children": [
       {
-        "id": "9809bd686afa35bd",
+        "id": "826b3d00a6bbd5ce",
         "type": "leaf",
+        "dimension": 57.341576506955185,
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Ruby/Gems/Geocoder/📝 TODO List.md",
+            "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Untitled.md",
+            "mode": "source"
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "8ee06940632071af",
+        "type": "leaf",
+        "dimension": 42.65842349304482,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md",
             "mode": "preview"
           }
         }
@@ -24,6 +39,7 @@
       {
         "id": "d11852447774d8b5",
         "type": "tabs",
+        "dimension": 64.35006435006436,
         "children": [
           {
             "id": "2acf3af0915648d6",
@@ -39,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Ruby",
+                "query": "tag:#space",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,6 +77,7 @@
       {
         "id": "e460a9ac900210fb",
         "type": "tabs",
+        "dimension": 35.64993564993565,
         "children": [
           {
             "id": "583d244c465cdc26",
@@ -68,7 +85,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Ruby/Gems/Geocoder/📝 TODO List.md",
+                "file": "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +108,7 @@
                   "repelStrength": 4.41778187971081,
                   "linkStrength": 0.570527611136748,
                   "linkDistance": 30,
-                  "scale": 1.204227369972382,
+                  "scale": 0.24687957225463064,
                   "close": true
                 }
               }
@@ -101,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 185
+    "width": 280
   },
   "right": {
     "id": "57dfb53781c6b3f4",
@@ -117,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ruby/Gems/Geocoder/📝 TODO List.md",
+                "file": "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ruby/Gems/Geocoder/📝 TODO List.md"
+                "file": "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md"
               }
             }
           },
@@ -163,7 +180,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ruby/Gems/Geocoder/📝 TODO List.md",
+                "file": "1 - Projects 🗃/JOGL 🌎/TODO 📝   GeoSearch Issue.md",
                 "mode": "preview"
               }
             }
@@ -195,17 +212,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 254
+    "width": 442
   },
-  "active": "9809bd686afa35bd",
+  "active": "8ee06940632071af",
   "lastOpenFiles": [
-    "Ruby/Gems/Geocoder/📝 TODO List.md",
-    "Ruby Gems/Geocoder Gem/📝 TODO List.md",
-    "2021-04-11.md",
-    "📝 TODO List.md",
-    "TODO List.md",
-    "2021-04-10.md",
-    "Emplacement fichier.md",
-    "Untitled.md"
+    "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md",
+    "3 - Resources 💡/🛠  Templates/Untitled.md",
+    "1 - Projects 🗃/JOGL 🌎/01 - Table of Content.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Untitled.md",
+    "1 - Projects 🗃/JOGL 🌎/PR 733 - Implement new space_type.md",
+    "1 - Projects 🗃/JOGL 🌎/Untitled.md",
+    "3 - Resources 💡/🛠  Templates/Gitlab Work Issue template.md",
+    "3 - Resources 💡/🛠  Templates/Meetings Template.md",
+    "3 - Resources 💡/🛠  Templates/Note Template.md",
+    "3 - Resources 💡/🛠  Templates/Daily Template.md"
   ]
 }
