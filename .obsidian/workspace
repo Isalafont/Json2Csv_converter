@@ -4,27 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "826b3d00a6bbd5ce",
+        "id": "ca1d10c29021b24e",
         "type": "leaf",
-        "dimension": 57.341576506955185,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Untitled.md",
+            "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
             "mode": "source"
           },
           "pinned": true
         }
       },
       {
-        "id": "8ee06940632071af",
+        "id": "7561291bac889315",
         "type": "leaf",
-        "dimension": 42.65842349304482,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md",
+            "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
             "mode": "preview"
           }
         }
@@ -85,7 +83,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md",
+                "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -108,7 +106,7 @@
                   "repelStrength": 4.41778187971081,
                   "linkStrength": 0.570527611136748,
                   "linkDistance": 30,
-                  "scale": 0.24687957225463064,
+                  "scale": 0.5174301179826218,
                   "close": true
                 }
               }
@@ -134,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md",
+                "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md"
+                "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md"
               }
             }
           },
@@ -212,19 +210,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 442
+    "width": 413
   },
-  "active": "8ee06940632071af",
+  "active": "ca1d10c29021b24e",
   "lastOpenFiles": [
+    "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
     "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md",
-    "3 - Resources 💡/🛠  Templates/Untitled.md",
     "1 - Projects 🗃/JOGL 🌎/01 - Table of Content.md",
-    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Untitled.md",
     "1 - Projects 🗃/JOGL 🌎/PR 733 - Implement new space_type.md",
+    "3 - Resources 💡/📌 Medias/Capture d’écran 2021-04-13 à 11.17.55.png",
+    "1 - Projects 🗃/JOGL 🌎/TODO 📝   GeoSearch Issue.md",
+    "1 - Projects 🗃/JOGL 🌎/Capture d’écran 2021-04-13 à 11.17.55.png",
+    "1 - Projects 🗃/JOGL 🌎/PR-722.md",
     "1 - Projects 🗃/JOGL 🌎/Untitled.md",
-    "3 - Resources 💡/🛠  Templates/Gitlab Work Issue template.md",
-    "3 - Resources 💡/🛠  Templates/Meetings Template.md",
-    "3 - Resources 💡/🛠  Templates/Note Template.md",
-    "3 - Resources 💡/🛠  Templates/Daily Template.md"
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Enumerator.md"
   ]
 }

@@ -1,9 +1,9 @@
-Tags : #space #jogl #inprogress 
-
+Tags : #space #jogl #complete 
 Title :  Implement New Space_type in Space model
 Date : [[2021-04-12-Weekly meetings]]
-Gitlab Issue: [#733 - Implement new field on spaces: space\_type](https://gitlab.com/JOGL/JOGL/-/issues/733)
-MR:  [#268 - add space_type as a enum in Space table](https://gitlab.com/JOGL/backend-v0.1/-/merge_requests/268)
+Gitlab Issue: [#733 - Implement new field on spaces: space_type](https://gitlab.com/JOGL/JOGL/-/issues/733)
+MR:  [#268 - add space_type as a enum in Space table](https://gitlab.com/JOGL/backend-v0.1/-/merge_requests/268) 
+==Approuved and Merged==
 Time Estimated: 2H
 
 ### Todo
