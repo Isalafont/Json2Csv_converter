@@ -1,7 +1,11 @@
 Tags : #Ruby #geoloc #TODO
+Title: Implementing Mapbox / New feature 
 Subject : GeoSearch mapbox implementation // Geocoder
-Date : [[2021-04-09]]
-Gitlab Issue: #687
+Date : [[2021-04-09]][[2021-04-16]]
+Gitlab Issue: [Issue 687 Backend prep Geo search](https://gitlab.com/JOGL/JOGL/-/issues/736)
+PR: 
+MR:
+Time Estimated:  Start : 10:00- end :  
 
 ## Directory where geocoder is places 
 - [X] config/initializers/geocoder.rb

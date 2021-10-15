@@ -1,6 +1,6 @@
 Tags : 
 Associations: 
-When: [[2021-04-10]]
+When: {{date}} - {{time}}
 
 ###  📆  Agenda: 
 ### 🎙 Topics:

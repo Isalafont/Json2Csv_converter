@@ -2,7 +2,7 @@ Tags : #Ruby #complete #article
 Title: Enumerator
 Subject: How to create Enumerator in a Rails 6.1 project
 Type: Article
-Associations: [[PR 733 - Implement new space_type]]
+Associations: [[PR-733 - Implement new space_type]]
 Ressources Documentations : 
 - [Creating Easy, Readable Attributes with Active Record Enums](https://www.justinweiss.com/articles/creating-easy-readable-attributes-with-activerecord-enums/)
 - [Ruby on Rails- How to Create Perfect Enum Easely!](https://medium.com/@moulayjam/ruby-on-rails-how-to-create-perfect-enum-easily-d8678e52488e)

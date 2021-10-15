@@ -4,28 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "ca1d10c29021b24e",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
-            "mode": "source"
+        "id": "b71a1e1c75420c39",
+        "type": "split",
+        "children": [
+          {
+            "id": "f22cefa883383b31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
+                "mode": "source"
+              }
+            }
           },
-          "pinned": true
-        }
-      },
-      {
-        "id": "7561291bac889315",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
-            "mode": "preview"
+          {
+            "id": "89b525d6da43d9d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
+                "mode": "preview"
+              }
+            }
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -37,7 +42,7 @@
       {
         "id": "d11852447774d8b5",
         "type": "tabs",
-        "dimension": 64.35006435006436,
+        "dimension": 62.819299905392626,
         "children": [
           {
             "id": "2acf3af0915648d6",
@@ -53,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#space",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,7 +80,7 @@
       {
         "id": "e460a9ac900210fb",
         "type": "tabs",
-        "dimension": 35.64993564993565,
+        "dimension": 37.180700094607374,
         "children": [
           {
             "id": "583d244c465cdc26",
@@ -83,7 +88,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
+                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -106,7 +111,7 @@
                   "repelStrength": 4.41778187971081,
                   "linkStrength": 0.570527611136748,
                   "linkDistance": 30,
-                  "scale": 0.5174301179826218,
+                  "scale": 0.06013130149069766,
                   "close": true
                 }
               }
@@ -116,7 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280
+    "width": 324
   },
   "right": {
     "id": "57dfb53781c6b3f4",
@@ -132,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
+                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md"
+                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md"
               }
             }
           },
@@ -210,19 +215,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413
+    "width": 330
   },
-  "active": "ca1d10c29021b24e",
+  "active": "f22cefa883383b31",
   "lastOpenFiles": [
-    "1 - Projects 🗃/JOGL 🌎/PR-722  - More Valid_country_names logic from model User.md",
-    "1 - Projects 🗃/JOGL 🌎/2021-04-12-Weekly meetings.md",
-    "1 - Projects 🗃/JOGL 🌎/01 - Table of Content.md",
-    "1 - Projects 🗃/JOGL 🌎/PR 733 - Implement new space_type.md",
-    "3 - Resources 💡/📌 Medias/Capture d’écran 2021-04-13 à 11.17.55.png",
-    "1 - Projects 🗃/JOGL 🌎/TODO 📝   GeoSearch Issue.md",
-    "1 - Projects 🗃/JOGL 🌎/Capture d’écran 2021-04-13 à 11.17.55.png",
-    "1 - Projects 🗃/JOGL 🌎/PR-722.md",
-    "1 - Projects 🗃/JOGL 🌎/Untitled.md",
-    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Enumerator.md"
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Sidekiq-Redis.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Sans titre.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/Issue -tickets template.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/Untitled.md",
+    "1 - Projects 🗃/JOGL 🌎/Issue 828 - Use same links in \"site-notification\", as in the \"notification mail\" CTA button.md",
+    "1 - Projects 🗃/JOGL 🌎/MR Rules Backend.md",
+    "1 - Projects 🗃/JOGL 🌎/PR-749 - Sidekiq Test Workers.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Validations.md"
   ]
 }
