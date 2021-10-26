@@ -1,0 +1,9 @@
+{
+  "theme": "moonstone",
+  "translucency": true,
+  "cssTheme": "California Coast",
+  "enabledCssSnippets": [
+    "personnal"
+  ],
+  "baseFontSize": 17
+}

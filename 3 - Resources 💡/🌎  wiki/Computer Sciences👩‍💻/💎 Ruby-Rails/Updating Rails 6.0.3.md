@@ -1,3 +1,7 @@
+Tags : #rails #frontend #backend #webpack #javascript
+Title: Updatin Rails project to 6.0.4.1 -  Ruby on Rails guide  
+Subject: Upgrading a Rails project.
+When: 2021-10-25 - 13:00
 - Change ruby version to 2.7.3 and rails version to ``gem 'rails', '~> 6.0.3', '>= 6.0.4.1' `` in Gemfile
 
 ```shell

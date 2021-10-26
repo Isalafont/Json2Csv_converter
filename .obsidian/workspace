@@ -4,33 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b71a1e1c75420c39",
-        "type": "split",
-        "children": [
-          {
-            "id": "f22cefa883383b31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
-                "mode": "source"
-              }
-            }
-          },
-          {
-            "id": "89b525d6da43d9d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
-                "mode": "preview"
-              }
-            }
+        "id": "22bc14ce4401886c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby-Rails/Rspec Tips.md",
+            "mode": "source"
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -88,7 +70,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
+                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby-Rails/Rspec Tips.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -111,7 +93,7 @@
                   "repelStrength": 4.41778187971081,
                   "linkStrength": 0.570527611136748,
                   "linkDistance": 30,
-                  "scale": 0.06013130149069766,
+                  "scale": 0.03525714264961445,
                   "close": true
                 }
               }
@@ -121,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324
+    "width": 298
   },
   "right": {
     "id": "57dfb53781c6b3f4",
@@ -137,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
+                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby-Rails/Rspec Tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,16 +147,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md"
+                "file": "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby-Rails/Rspec Tips.md"
               }
-            }
-          },
-          {
-            "id": "65d7ff34908f1d47",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -197,7 +171,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "1a284fa8b6325add",
@@ -215,19 +189,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 330
+    "width": 284
   },
-  "active": "f22cefa883383b31",
+  "active": "22bc14ce4401886c",
   "lastOpenFiles": [
-    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails 6.0.3.md",
-    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Updating Rails.md",
-    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Sidekiq-Redis.md",
-    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Sans titre.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby-Rails/Rspec Tips.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby-Rails/PostgreSQL.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/MR Rules Backend.md",
+    "1 - Projects 🗃/JOGL 🌎/Documentation.md",
+    "1 - Projects 🗃/JOGL 🌎/JOGL USER ACCOUNT.md",
+    "1 - Projects 🗃/JOGL 🌎/Maildev.md",
+    "1 - Projects 🗃/JOGL 🌎/PR-616 - Space-user have to be accepted in a space.md",
     "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/Issue -tickets template.md",
-    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/Untitled.md",
-    "1 - Projects 🗃/JOGL 🌎/Issue 828 - Use same links in \"site-notification\", as in the \"notification mail\" CTA button.md",
-    "1 - Projects 🗃/JOGL 🌎/MR Rules Backend.md",
-    "1 - Projects 🗃/JOGL 🌎/PR-749 - Sidekiq Test Workers.md",
-    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby/Validations.md"
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby-Rails/Validations.md",
+    "3 - Resources 💡/🌎  wiki/Computer Sciences👩‍💻/💎 Ruby-Rails/Updating Rails 6.0.3.md"
   ]
 }
