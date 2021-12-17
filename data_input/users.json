@@ -2,10 +2,7 @@
   {
     "id": 0,
     "email": "colleengriffith@quintity.com",
-    "tags": [
-      "consectetur",
-      "quis"
-    ],
+    "tags": ["consectetur", "quis"],
     "profiles": {
       "facebook": {
         "id": 0,
@@ -20,11 +17,7 @@
   {
     "id": 1,
     "email": "maryellengriffin@ginkle.com",
-    "tags": [
-      "veniam",
-      "elit",
-      "mollit"
-    ],
+    "tags": ["veniam", "elit", "mollit"],
     "profiles": {
       "facebook": {
         "id": 1,
@@ -39,11 +32,7 @@
   {
     "id": 2,
     "email": "hesterherman@exozent.com",
-    "tags": [
-      "consectetur",
-      "et",
-      "irure"
-    ],
+    "tags": ["consectetur", "et", "irure"],
     "profiles": {
       "facebook": {
         "id": 2,
@@ -58,11 +47,7 @@
   {
     "id": 3,
     "email": "romeromarks@exovent.com",
-    "tags": [
-      "sint",
-      "laboris",
-      "ad"
-    ],
+    "tags": ["sint", "laboris", "ad"],
     "profiles": {
       "facebook": {
         "id": 3,
@@ -77,10 +62,7 @@
   {
     "id": 4,
     "email": "marlamartin@stucco.com",
-    "tags": [
-      "id",
-      "voluptate"
-    ],
+    "tags": ["id", "voluptate"],
     "profiles": {
       "facebook": {
         "id": 4,
@@ -95,11 +77,7 @@
   {
     "id": 5,
     "email": "weekschase@maxemia.com",
-    "tags": [
-      "ullamco",
-      "consequat",
-      "do"
-    ],
+    "tags": ["ullamco", "consequat", "do"],
     "profiles": {
       "facebook": {
         "id": 5,
@@ -114,11 +92,7 @@
   {
     "id": 6,
     "email": "grahamrichardson@marketoid.com",
-    "tags": [
-      "fugiat",
-      "sint",
-      "voluptate"
-    ],
+    "tags": ["fugiat", "sint", "voluptate"],
     "profiles": {
       "facebook": {
         "id": 6,
@@ -133,10 +107,7 @@
   {
     "id": 7,
     "email": "mendozavalentine@entality.com",
-    "tags": [
-      "nulla",
-      "sint"
-    ],
+    "tags": ["nulla", "sint"],
     "profiles": {
       "facebook": {
         "id": 7,
@@ -151,11 +122,7 @@
   {
     "id": 8,
     "email": "wademcleod@updat.com",
-    "tags": [
-      "fugiat",
-      "duis",
-      "exercitation"
-    ],
+    "tags": ["fugiat", "duis", "exercitation"],
     "profiles": {
       "facebook": {
         "id": 8,
@@ -170,10 +137,7 @@
   {
     "id": 9,
     "email": "bakerwatson@geekosis.com",
-    "tags": [
-      "Lorem",
-      "cupidatat"
-    ],
+    "tags": ["Lorem", "cupidatat"],
     "profiles": {
       "facebook": {
         "id": 9,
