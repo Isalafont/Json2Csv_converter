@@ -6,22 +6,22 @@ module ConvertJsonCSV
  # => ex : ConvertJsonCSV.convert_csv('data/users.json')
 
  # Recursive method to extract all the keys from the hash to create the CSV header.
- # next / end => if value is a hash, this iteration continue
+  # next / end => if value is a hash, this iteration continue
  
- def flatten_hash_from(hash)
+  def flatten_hash_header(hash)
     hash.each_with_object({}) do |(key, value), header|
-      next flatten_hash_from(value).each do |k, v|
+      next flatten_hash_header(value).each do |k, v|
         header["#{key}.#{k}".intern] = v
       end if value.is_a? Hash
       header[key] = value
     end
   end
+
+  #  - input_file : path of the JSON file
+  #  - output_file : path of the CSV file
   
-  #   - input_file : path of the JSON file
-  #   - output_file : path of the CSV file
-  
-  def convert_csv(input_file, output_file)
-    # Read the file
+  def self.convert_csv(input_file, output_file)
+
     data_hash = JSON.parse(File.open("input_file")).read
     headers = []
     rows = []
@@ -34,7 +34,8 @@ module ConvertJsonCSV
       headers << row_headers
       rows << row
     end
-    
+
+    # Open CSV and write headers and rows
     CSV.open(output_file, "wb") do |csv|
       csv << headers[0]
       rows.each do |row|
@@ -42,7 +43,7 @@ module ConvertJsonCSV
       end
     end
   end
-  
+
 end
 
-ConvertJsonCSV.convert_csv('data_input/users.json', 'data_output/users1.csv')
+ConvertJsonCSV.convert_csv("data_input/users.json", "data_output/users.csv")
