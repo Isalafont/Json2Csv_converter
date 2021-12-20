@@ -1,16 +1,29 @@
-# Json2Csv
+# Convert Json2Csv
 
-This repository is part of : [MyJobGlasses](https://www.myjobglasses.com/) - Technical Test
+A simple ruby lib to convert JSON into CSV.
 
 The goal of this test is to write a small Ruby lib aiming to convert JSON files composed of arrays of objects (all following the same schema) to a CSV file where one line equals one object.
 
-## Test instructions
+## Usage
 
-### Setup
+### By running the lib file into terminal
+
+```shell
+$ ruby lib/convertJsonCSV.rb
+...
+```
+
+### By running the file in the console
+
+Comment line 63 : ConvertJsonCSV.create_csv('./data_input/users.json', './data_output/users2.csv')
+
+```shell
+$ irb
+$ load 'convertJsonCSV.rb'
+$ ConvertJsonCSV.create_csv('your_input_file/data_input/users.json', 'your_input_file/data_output/users2.csv')
+```
 
 Some sample files are located in `./input_json_files` and `./output_csv_files`
-
-You can start by writing a `main.rb` (feel free to change this name) that will perform the conversion when running `ruby main.rb`
 
 ### Test criteria
 
@@ -19,8 +32,8 @@ You can start by writing a `main.rb` (feel free to change this name) that will p
 - robust (don't overlook edge cases, use exceptions where needed, ...)
 - tested
 
-You have no limitation of time, what we expect is to have a discussion about your choices and your code implementation.
+## TODO Left
 
-To share your code, it's your choice again : send us a zip or a GitHub link !
-
-Good luck !
+- Test
+- Fix bug
+- Robust
