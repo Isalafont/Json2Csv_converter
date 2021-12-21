@@ -36,3 +36,27 @@ Some sample files are located in `./input_json_files` and `./output_csv_files`
 - Test
 - Fix bug
 - Robust
+
+## New Instruction
+
+- L'objectif global du test : Lorsque l'on execute la cmd "\$ruby le_programme_d'entrée.rb", tous les fichiers _.json qui sont dans /input_json_files, soient convertis (ou non) en _.csv dans /output_csv_files.
+  _Les fichiers Input peuvent ne pas être sous format JSON ET/OU formatés différement._
+
+### Etape possible
+
+- Accès au dossier /input
+- Récupération des fichiers
+- Validation des fichiers
+- Gestion d'erreur possibles
+
+**Puis traitement pour chaque fichier que le programme puisse accepter.**
+
+- Lecture (parsing) du fichier
+- Traitement du header csv
+- Création du fichier .csv
+- Formatage des données pour chaque colonnes du csv
+- _Gestion d'erreur possibles (si chaque entrée du tableau de json ne dispose pas des mêmes clefs ? Si pour certaines clefs tu as un second niveau de tableau avec du json imbriqué, comment "aplatir" ces données en deux dimensions pour les colonnes d'un csv ?)_
+
+_La stratégie avec laquelle tu vas structurer ton programme est fondamentale pour cet exercice._
+
+Si un module te permet de défiler de façon procédurale les étapes à l'entrée du programme, il pourrait être intéressant d'avoir des classes ruby, ayant des responsabilité bien définies et isolées : lecture du dossier, parsing, traitement du header, écriture...
