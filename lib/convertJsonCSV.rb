@@ -13,6 +13,8 @@ module ConvertJsonCSV
     save_csv(output_file, headers, rows)
   end
 
+  private
+
   def self.get_data_from_json(input_file)
     data_json = JSON.parse(File.open(input_file).read)
   end
@@ -24,11 +26,6 @@ module ConvertJsonCSV
     end
     return headers.uniq
   end
-
-  # => headers = ["id", "email", "tags", "profiles.facebook.id", 
-  #               "profiles.facebook.picture",
-  #               "profiles.twitter.id",
-  #               "profiles.twitter.picture"]
 
   def self.get_keys(data_json, headers, parent = nil)
     data_json.each do |key, value|
@@ -50,8 +47,6 @@ module ConvertJsonCSV
     return rows
   end
 
-  # => error message no implicit conversion of String into Integer from convertJsonCSV.rb:45:in `dig'
-
   def self.save_csv(output_file, headers, rows)
     CSV.open(output_file, "wb") do |csv|
       csv << headers
@@ -67,14 +62,19 @@ ConvertJsonCSV.create_csv('./data_input/users.json', './data_output/users2.csv')
 
   # PSEUDO CODE
 
-  # def create_header
+  # def create_header(datum)
   #   headers est un ARRAY
-  #   POUR CHAQUE élément de mes données
+  #   POUR CHAQUE élément de mes datum
   #     headers = récupérer les clefs de mon élément: get_keys(element, headers)
   #   fin POUR CHAQUE
 
   #   RETOURNER headers SANS DOUBLON ## SANS DOUBLON peut être fait dans l'itération au dessus si on a peur de données trop grandes
   # end
+
+  # => headers = ["id", "email", "tags", "profiles.facebook.id",
+  #               "profiles.facebook.picture",
+  #               "profiles.twitter.id",
+  #               "profiles.twitter.picture"]
 
   # def get_keys(element, headers, prefixe DEFAULT NUL)
   #   POUR CHAQUE couple (clef, valeur) de element
@@ -89,9 +89,11 @@ ConvertJsonCSV.create_csv('./data_input/users.json', './data_output/users2.csv')
   #   RETOURNER headers
   # end
 
-  # def hash_to_array(mon_hash)
+  # def add_values(mon_hash)
   #   row est un ARRAY
   #   POUR CHAQUE header
   #     On met dans row mon_hash[header]
   #   fin POUR CHAQUE
   # end
+
+  # => error message no implicit conversion of String into Integer from convertJsonCSV.rb:45:in `dig'
