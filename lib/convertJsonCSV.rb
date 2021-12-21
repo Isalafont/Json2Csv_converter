@@ -4,10 +4,13 @@ require 'csv'
 module ConvertJsonCSV
   
   def self.create_csv(input_file, output_file)
+    data_json = []
+    headers = []
+    rows = []
     get_data_from_json(input_file)
     create_header(data_json)
-    add_values(data_jason, headers)
-    save_csv(output_files, headers, rows)
+    add_values(data_json, headers)
+    save_csv(output_file, headers, rows)
   end
 
   def self.get_data_from_json(input_file)
@@ -49,7 +52,7 @@ module ConvertJsonCSV
 
   # => error message no implicit conversion of String into Integer from convertJsonCSV.rb:45:in `dig'
 
-  def save_csv(output_file, headers, rows)
+  def self.save_csv(output_file, headers, rows)
     CSV.open(output_file, "wb") do |csv|
       csv << headers
       rows.each do |row|
@@ -60,7 +63,7 @@ module ConvertJsonCSV
 
 end
 
-# ConvertJsonCSV.create_csv('./data_input/users.json', './data_output/users2.csv')
+ConvertJsonCSV.create_csv('./data_input/users.json', './data_output/users2.csv')
 
   # PSEUDO CODE
 
