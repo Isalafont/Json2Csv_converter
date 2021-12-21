@@ -96,5 +96,5 @@ ConvertJsonCSV.create_csv('./data_input/users.json', './data_output/users2.csv')
   #   fin POUR CHAQUE
   # end
 
-  # Bug To fix
+  # TODO Bug To fix
   # => error message no implicit conversion of String into Integer from convertJsonCSV.rb:45:in `dig'
