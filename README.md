@@ -9,7 +9,7 @@ The goal of this test is to write a small Ruby lib aiming to convert JSON files 
 ### By running the lib file into terminal
 
 ```shell
-$ ruby lib/convertJsonCSV_cmd.rb 'data_input/{#name_input_file}' 'data_output/{#name_output_file}
+$ ruby lib/convertJsonCSV_cmd.rb
 ```
 
 ### By running the file in the console
@@ -19,7 +19,7 @@ Comment line 63 : ConvertJsonCSV.create_csv('./data_input/users.json', './data_o
 ```shell
 $ irb
 $ load 'convertJsonCSV.rb'
-$ ConvertJsonCSV.create_csv('your_file_PATH/data_input/users.json', 'your_file_PATH/data_output/users2.csv')
+$ ConvertJsonCSV.create_csv('users.json', 'users.csv')
 ```
 
 Some sample files are located in `./input_json_files` and `./output_csv_files`

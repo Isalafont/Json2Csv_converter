@@ -1,21 +1,25 @@
 require_relative 'lib/convertJsonCSV'
+require_relative 'lib/load_data'
 
 # Create programme to launch lib converter from CLI using name of ruby file only
 
 if __FILE__ == $0
-
-  # Method take 2 cmd line ARGV (input_file, output_file)
-  # Raise exception if there is not 2 arguments
   
-  if ARGV.size != 2
-    raise('Wrong args : ruby convertJsonCSV_cmd.rb input.json output.csv')
-  end
+  # if ARGV.size != 2
+  #   raise('Wrong args : ruby convertJsonCSV_cmd.rb input.json output.csv')
+  # end
 
-  convert = ConvertJsonCSV.new('./data_input/badges.json', './data_output/badges.csv')
-  convert.create_csv(ARGV[0], ARGV[1])
+  input = LoadData.new('users.json')
+  convert = ConvertJsonCSV.new(input, 'users1.csv')
+  # convert.create_csv(ARGV[0], ARGV[1])
+  convert.create_csv('users.json', 'users1.csv')
 end
 
-# Create cmd line argument : ARGV[0], ARGV[1] to replace input_file/output_file
-# => Running ruby convertJsonCSV_cmd.rb file.json file.csv
+# TODO BUG TO FIX
 
-# TODO find a way to only have to run cmd ruby convertJsonCSV_cmd.rb
+# convert.create_csv(ARGV[0], ARGV[1])
+# =>  convertJsonCSV.rb:33:in `read': Is a directory @ io_fread - ./data_input/ (Errno::EISDIR)
+
+# Problem
+# If cmd line argument : ARGV[0], ARGV[1] to replace input_file/output_file does not work
+# Couldn't pick any files from directory but had to called them.

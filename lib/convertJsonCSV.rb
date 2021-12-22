@@ -1,22 +1,25 @@
 require 'json'
 require 'csv'
+require_relative 'load_data.rb'
 
 class ConvertJsonCSV
 
   attr_reader :input_file
   attr_accessor :output_file
 
+  FILE_PATH = './data_input'
+  FILE_OUTPUT_PATH = './data_output'
+
   def initialize(input_file, output_file)
     @input_file = input_file
     @output_file = output_file
-    raise 'Data not found' unless File.exist?(input_file)
   end
 
-  
   def create_csv(input_file, output_file)
     data_json = []
     headers = []
     rows = []
+    # load_data(input_file)
     get_data_from_json(input_file)
     create_header(data_json)
     add_values(data_json, headers)
@@ -25,9 +28,12 @@ class ConvertJsonCSV
 
   private
 
+  # Class LoadData => not sure to know how to call it
   def get_data_from_json(input_file)
-    data_json = JSON.parse(File.open(input_file).read)
+    data_json = JSON.parse(File.open("#{FILE_PATH}/#{input_file}").read)
   end
+
+  # End Class LoadData
 
   def create_header(data_json)
     headers = []
@@ -58,7 +64,7 @@ class ConvertJsonCSV
   end
 
   def save_csv(output_file, headers, rows)
-    CSV.open(output_file, "wb") do |csv|
+    CSV.open("#{FILE_OUTPUT_PATH}/#{output_file}", "wb") do |csv|
       csv << headers
       rows.each do |row|
         csv << row
