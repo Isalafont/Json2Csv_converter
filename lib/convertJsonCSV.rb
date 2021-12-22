@@ -15,22 +15,22 @@ class ConvertJsonCSV
     @output_file = output_file
   end
 
-  def create_csv(input_file, output_file)
+  def create_csv
     data_json = []
     headers = []
     rows = []
     # load_data(input_file) # => from Class LoadData error undefined method NoMethodError
-    get_data_from_json(input_file)
+    get_data_from_json
     create_header(data_json)
     add_values(data_json, headers)
-    save_csv(output_file, headers, rows)
+    save_csv(headers, rows)
   end
 
   private
 
   # Class LoadData Should replace this lines => not sure to know how to call it
-  def get_data_from_json(input_file)
-    data_json = JSON.parse(File.open("#{FILE_PATH}/#{input_file}").read)
+  def get_data_from_json
+    data_json = JSON.parse(File.open("#{FILE_PATH}/#{@input_file}").read)
   end
   # End Class LoadData
 
@@ -62,8 +62,8 @@ class ConvertJsonCSV
     return rows
   end
 
-  def save_csv(output_file, headers, rows)
-    CSV.open("#{FILE_OUTPUT_PATH}/#{output_file}", "wb") do |csv|
+  def save_csv(headers, rows)
+    CSV.open("#{FILE_OUTPUT_PATH}/#{@output_file}", "wb") do |csv|
       csv << headers
       rows.each do |row|
         csv << row
