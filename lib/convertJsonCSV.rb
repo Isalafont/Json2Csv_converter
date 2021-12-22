@@ -1,5 +1,6 @@
 require 'json'
 require 'csv'
+require 'pry'
 require_relative 'load_data'
 
 class ConvertJsonCSV
@@ -16,13 +17,13 @@ class ConvertJsonCSV
   end
 
   def create_csv
-    data_json = []
+    @data_json = []
     headers = []
     rows = []
     # load_data(input_file) # => from Class LoadData error undefined method NoMethodError
     get_data_from_json
-    create_header(data_json)
-    add_values(data_json, headers)
+    create_header(@data_json)
+    add_values(@data_json, headers)
     save_csv(headers, rows)
   end
 
@@ -30,20 +31,20 @@ class ConvertJsonCSV
 
   # Class LoadData Should replace this lines => not sure to know how to call it
   def get_data_from_json
-    data_json = JSON.parse(File.open("#{FILE_PATH}/#{@input_file}").read)
+    @data_json = JSON.parse(File.open("#{FILE_PATH}/#{@input_file}").read)
   end
   # End Class LoadData
 
   def create_header(data_json)
     headers = []
-    data_json.each do |element|
+    @data_json.each do |element|
       headers = get_keys(element, headers)
     end
     return headers.uniq
   end
 
   def get_keys(data_json, headers, parent = nil)
-    data_json.each do |key, value|
+    @data_json.each do |key, value|
       row_headers = parent ? "#{parent}.#{key}" : key
       if value.is_a? Hash
         headers = get_keys(value, headers, row_headers)
@@ -57,7 +58,7 @@ class ConvertJsonCSV
   def add_values(data_json, headers)
     rows = []
     headers.each do |header|
-      rows << data_json.dig(*header.split("."))
+      rows << @data_json.dig(*header.split("."))
     end
     return rows
   end
