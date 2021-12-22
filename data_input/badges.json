@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "BadgeDescription": "Congratulations on signing into the EPF app! Here's a badge to get started. As you progress through the class, you'll earn these for various things you accomplish.",
+      "BadgeName": "Starting Out",
+      "Everyone": true,
+      "Recipients": [
+        { "__type": "Pointer", "className": "_User", "objectId": "udxI1ap5pO" }
+      ],
+      "imageFile": {
+        "__type": "File",
+        "name": "459fcbc2-3d14-496e-887d-c6d63b79f18a-Starting Out.png",
+        "url": "http://files.parse.com/b3ceabfb-7020-42bb-9137-8e691f431382/459fcbc2-3d14-496e-887d-c6d63b79f18a-Starting%20Out.png"
+      },
+      "createdAt": "2013-08-31T13:48:11.659Z",
+      "updatedAt": "2013-08-31T13:49:48.621Z",
+      "objectId": "d1O5piYJzD",
+      "ACL": {
+        "*": {
+          "write": true,
+          "read": true
+        },
+        "udxI1ap5pO": {
+          "write": true,
+          "read": true
+        }
+      }
+    }
+  ]
+}

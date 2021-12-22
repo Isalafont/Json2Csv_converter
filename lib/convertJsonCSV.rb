@@ -1,9 +1,19 @@
 require 'json'
 require 'csv'
 
-module ConvertJsonCSV
+class ConvertJsonCSV
+
+  attr_reader :input_file
+  attr_accessor :output_file
+
+  def initialize(input_file, output_file)
+    @input_file = input_file
+    @output_file = output_file
+    raise 'Data not found' unless File.exist?(input_file)
+  end
+
   
-  def self.create_csv(input_file, output_file)
+  def create_csv(input_file, output_file)
     data_json = []
     headers = []
     rows = []
@@ -15,11 +25,11 @@ module ConvertJsonCSV
 
   private
 
-  def self.get_data_from_json(input_file)
+  def get_data_from_json(input_file)
     data_json = JSON.parse(File.open(input_file).read)
   end
 
-  def self.create_header(data_json)
+  def create_header(data_json)
     headers = []
     data_json.each do |element|
       headers = get_keys(element, headers)
@@ -27,7 +37,7 @@ module ConvertJsonCSV
     return headers.uniq
   end
 
-  def self.get_keys(data_json, headers, parent = nil)
+  def get_keys(data_json, headers, parent = nil)
     data_json.each do |key, value|
       row_headers = parent ? "#{parent}.#{key}" : key
       if value.is_a? Hash
@@ -39,7 +49,7 @@ module ConvertJsonCSV
     return headers
   end
 
-  def self.add_values(data_json, headers)
+  def add_values(data_json, headers)
     rows = []
     headers.each do |header|
       rows << data_json.dig(*header.split("."))
@@ -47,7 +57,7 @@ module ConvertJsonCSV
     return rows
   end
 
-  def self.save_csv(output_file, headers, rows)
+  def save_csv(output_file, headers, rows)
     CSV.open(output_file, "wb") do |csv|
       csv << headers
       rows.each do |row|
@@ -57,8 +67,6 @@ module ConvertJsonCSV
   end
 
 end
-
-ConvertJsonCSV.create_csv('./data_input/users.json', './data_output/users2.csv')
 
   # PSEUDO CODE
 
