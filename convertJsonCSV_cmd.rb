@@ -10,6 +10,7 @@ if __FILE__ == $0
   # end
 
   input = LoadData.new('users.json')
+  # input.load_data(input_file)
   convert = ConvertJsonCSV.new(input, 'users1.csv')
   # convert.create_csv(ARGV[0], ARGV[1])
   convert.create_csv('users.json', 'users1.csv')

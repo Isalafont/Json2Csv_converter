@@ -1,6 +1,6 @@
 require 'json'
 require 'csv'
-require_relative 'load_data.rb'
+require_relative 'load_data'
 
 class ConvertJsonCSV
 
@@ -19,7 +19,7 @@ class ConvertJsonCSV
     data_json = []
     headers = []
     rows = []
-    # load_data(input_file)
+    # load_data(input_file) # => from Class LoadData error undefined method NoMethodError
     get_data_from_json(input_file)
     create_header(data_json)
     add_values(data_json, headers)
@@ -28,11 +28,10 @@ class ConvertJsonCSV
 
   private
 
-  # Class LoadData => not sure to know how to call it
+  # Class LoadData Should replace this lines => not sure to know how to call it
   def get_data_from_json(input_file)
     data_json = JSON.parse(File.open("#{FILE_PATH}/#{input_file}").read)
   end
-
   # End Class LoadData
 
   def create_header(data_json)
