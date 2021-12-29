@@ -1,7 +1,8 @@
 require 'json'
 require 'csv'
 require 'pry'
-require_relative 'load_data'
+# require_relative 'load_data'
+# require_relative 'get_header'
 
 class ConvertJsonCSV
 
@@ -18,55 +19,58 @@ class ConvertJsonCSV
 
   def create_csv
     @data_json = []
-    headers = []
-    rows = []
-    # load_data(input_file) # => from Class LoadData error undefined method NoMethodError
-    get_data_from_json
+    @headers = []
+    @rows = []
+    get_data_from_json(@input_file)
+    # LoadData.new(@input_file).load_data
+    # @headers = GetHeader.new(@data_json, @headers, @rows).create_header
     create_header(@data_json)
-    add_values(@data_json, headers)
-    save_csv(headers, rows)
+    add_values(@data_json, @headers)
+    save_csv(@headers, @rows)
   end
 
-  private
+  # private
 
   # Class LoadData Should replace this lines => not sure to know how to call it
-  def get_data_from_json
+  def get_data_from_json(input_file)
     @data_json = JSON.parse(File.open("#{FILE_PATH}/#{@input_file}").read)
   end
   # End Class LoadData
 
+  # Class GetHeader
   def create_header(data_json)
-    headers = []
+    @headers = []
     @data_json.each do |element|
-      headers = get_keys(element, headers)
+      @headers = get_keys(element, @headers)
     end
-    return headers.uniq
+    return @headers.uniq
   end
 
   def get_keys(data_json, headers, parent = nil)
     @data_json.each do |key, value|
       row_headers = parent ? "#{parent}.#{key}" : key
       if value.is_a? Hash
-        headers = get_keys(value, headers, row_headers)
+        @headers = get_keys(value, headers, row_headers)
       else
-        headers << row_headers
+        @headers << row_headers
       end
     end
-    return headers
+    return @headers
   end
+  # End Class GetHeader
 
   def add_values(data_json, headers)
-    rows = []
-    headers.each do |header|
-      rows << @data_json.dig(*header.split("."))
+    @rows = []
+    @headers.each do |header|
+      @rows << @data_json.dig(*header.split("."))
     end
-    return rows
+    return @rows
   end
 
   def save_csv(headers, rows)
     CSV.open("#{FILE_OUTPUT_PATH}/#{@output_file}", "wb") do |csv|
-      csv << headers
-      rows.each do |row|
+      csv << @headers
+      @rows.each do |row|
         csv << row
       end
     end
