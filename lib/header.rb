@@ -1,16 +1,16 @@
 require_relative 'convertJsonCSV'
 
-class GetHeader
-  attr_reader :data_json
-  attr_accessor :header, :rows
+ class Header
 
-  def initialize(data_json, headers, rows)
+  attr_reader :data_json
+  attr_accessor :header
+  
+  def initialize(data_json, headers)
     @data_json = data_json
     @headers = headers
-    @rows = rows
   end
 
-  def create_header
+  def create_header(data_json)
     @headers = []
     @data_json.each do |element|
       @headers = get_keys(element, @headers)
@@ -29,5 +29,5 @@ class GetHeader
     end
     return @headers
   end
-
+  
 end

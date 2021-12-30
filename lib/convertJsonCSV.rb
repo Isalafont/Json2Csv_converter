@@ -2,7 +2,7 @@ require 'json'
 require 'csv'
 require 'pry'
 # require_relative 'load_data'
-# require_relative 'get_header'
+require_relative 'header'
 
 class ConvertJsonCSV
 
@@ -21,43 +21,20 @@ class ConvertJsonCSV
     @data_json = []
     @headers = []
     @rows = []
+    # LoadData.new(@input_file).load_data(@input_file)
     get_data_from_json(@input_file)
-    # LoadData.new(@input_file).load_data
-    # @headers = GetHeader.new(@data_json, @headers, @rows).create_header
-    create_header(@data_json)
+    Header.new(@data_json, @headers).create_header(@data_json)
     add_values(@data_json, @headers)
     save_csv(@headers, @rows)
   end
 
-  # private
+  private
 
   # Class LoadData Should replace this lines => not sure to know how to call it
   def get_data_from_json(input_file)
     @data_json = JSON.parse(File.open("#{FILE_PATH}/#{@input_file}").read)
   end
   # End Class LoadData
-
-  # Class GetHeader
-  def create_header(data_json)
-    @headers = []
-    @data_json.each do |element|
-      @headers = get_keys(element, @headers)
-    end
-    return @headers.uniq
-  end
-
-  def get_keys(data_json, headers, parent = nil)
-    @data_json.each do |key, value|
-      row_headers = parent ? "#{parent}.#{key}" : key
-      if value.is_a? Hash
-        @headers = get_keys(value, headers, row_headers)
-      else
-        @headers << row_headers
-      end
-    end
-    return @headers
-  end
-  # End Class GetHeader
 
   def add_values(data_json, headers)
     @rows = []
