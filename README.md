@@ -9,7 +9,7 @@ The goal of this test is to write a small Ruby lib aiming to convert JSON files 
 ### By running the lib file into terminal
 
 ```shell
-$ ruby lib/convertJsonCSV.rb
+$ ruby lib/convertJsonCSV_cmd.rb
 ```
 
 ### By running the file in the console
@@ -19,7 +19,7 @@ Comment line 63 : ConvertJsonCSV.create_csv('./data_input/users.json', './data_o
 ```shell
 $ irb
 $ load 'convertJsonCSV.rb'
-$ ConvertJsonCSV.create_csv('your_file_PATH/data_input/users.json', 'your_file_PATH/data_output/users2.csv')
+$ ConvertJsonCSV.create_csv('users.json', 'users.csv')
 ```
 
 Some sample files are located in `./input_json_files` and `./output_csv_files`
@@ -39,8 +39,8 @@ Some sample files are located in `./input_json_files` and `./output_csv_files`
 
 ## New Instruction
 
-- L'objectif global du test : Lorsque l'on execute la cmd "\$ruby le_programme_d'entrée.rb", tous les fichiers _.json qui sont dans /input_json_files, soient convertis (ou non) en _.csv dans /output_csv_files.
-  _Les fichiers Input peuvent ne pas être sous format JSON ET/OU formatés différement._
+- L'objectif global du test : Lorsque l'on execute la cmd "\$ruby le*programme_d'entrée.rb", tous les fichiers *.json qui sont dans /input*json_files, soient convertis (ou non) en *.csv dans /output*csv_files.
+  \_Les fichiers Input peuvent ne pas être sous format JSON ET/OU formatés différement.*
 
 ### Etape possible
 

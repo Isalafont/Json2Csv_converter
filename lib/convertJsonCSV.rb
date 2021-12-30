@@ -1,64 +1,59 @@
 require 'json'
 require 'csv'
+require 'pry'
+# require_relative 'load_data'
+require_relative 'header'
 
-module ConvertJsonCSV
-  
-  def self.create_csv(input_file, output_file)
-    data_json = []
-    headers = []
-    rows = []
-    get_data_from_json(input_file)
-    create_header(data_json)
-    add_values(data_json, headers)
-    save_csv(output_file, headers, rows)
+class ConvertJsonCSV
+
+  attr_reader :input_file
+  attr_accessor :output_file
+
+  FILE_PATH = './data_input'
+  FILE_OUTPUT_PATH = './data_output'
+
+  def initialize(input_file, output_file)
+    @input_file = input_file
+    @output_file = output_file
+  end
+
+  def create_csv
+    @data_json = []
+    @headers = []
+    @rows = []
+    # LoadData.new(@input_file).load_data(@input_file)
+    get_data_from_json(@input_file)
+    Header.new(@data_json, @headers).create_header(@data_json)
+    add_values(@data_json, @headers)
+    save_csv(@headers, @rows)
   end
 
   private
 
-  def self.get_data_from_json(input_file)
-    data_json = JSON.parse(File.open(input_file).read)
+  # Class LoadData Should replace this lines => not sure to know how to call it
+  def get_data_from_json(input_file)
+    @data_json = JSON.parse(File.open("#{FILE_PATH}/#{@input_file}").read)
   end
+  # End Class LoadData
 
-  def self.create_header(data_json)
-    headers = []
-    data_json.each do |element|
-      headers = get_keys(element, headers)
+  def add_values(data_json, headers)
+    @rows = []
+    @headers.each do |header|
+      @rows << @data_json.dig(*header.split("."))
     end
-    return headers.uniq
+    return @rows
   end
 
-  def self.get_keys(data_json, headers, parent = nil)
-    data_json.each do |key, value|
-      row_headers = parent ? "#{parent}.#{key}" : key
-      if value.is_a? Hash
-        headers = get_keys(value, headers, row_headers)
-      else
-        headers << row_headers
-      end
-    end
-    return headers
-  end
-
-  def self.add_values(data_json, headers)
-    rows = []
-    headers.each do |header|
-      rows << data_json.dig(*header.split("."))
-    end
-    return rows
-  end
-
-  def self.save_csv(output_file, headers, rows)
-    CSV.open(output_file, "wb") do |csv|
-      csv << headers
-      rows.each do |row|
+  def save_csv(headers, rows)
+    CSV.open("#{FILE_OUTPUT_PATH}/#{@output_file}", "wb") do |csv|
+      csv << @headers
+      @rows.each do |row|
         csv << row
       end
     end
   end
 
 end
-
-ConvertJsonCSV.create_csv('./data_input/users.json', './data_output/users2.csv')
 
   # PSEUDO CODE
 
