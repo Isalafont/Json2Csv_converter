@@ -12,5 +12,6 @@
   "showLineNumber": false,
   "tabSize": 2,
   "fileSortOrder": "alphabetical",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "promptDelete": false
 }
